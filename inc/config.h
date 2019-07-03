@@ -210,11 +210,11 @@
 #endif
 
 #ifndef BAT_NUMBER_OF_CELLS
-  #define BAT_NUMBER_OF_CELLS     10        // normal Hoverboard battery: 10s
+  #define BAT_NUMBER_OF_CELLS     12        // normal Hoverboard battery: 10s
 #endif
 
 #ifndef BAT_LOW_LVL1_ENABLE
-  #define BAT_LOW_LVL1_ENABLE     0         // to beep or not to beep, 1 or 0
+  #define BAT_LOW_LVL1_ENABLE     1         // to beep or not to beep, 1 or 0
 #endif
 #ifndef BAT_LOW_LVL1
   #define BAT_LOW_LVL1            3.6       // gently beeps at this voltage level. [V/cell]
@@ -355,7 +355,7 @@
 //#define CONTROL_NUNCHUCK            // use nunchuck as input. disable DEBUG_SERIAL_USART3!
 
 
-//#define WHEEL_SIZE_INCHES 8.5 - set to your wheelsize to override the default 6.5
+#define WHEEL_SIZE_INCHES 10 // - set to your wheelsize to override the default 6.5
 
 
 // ############################### SOFTWARE SERIAL ###############################
@@ -391,7 +391,7 @@
   #define SPEED_COEFFICIENT   0.5  // higher value == stronger. 0.0 to ~2.0?
 #endif
 #ifndef STEER_COEFFICIENT
-  #define STEER_COEFFICIENT   0.5  // higher value == stronger. if you do not want any steering, set it to 0.0; 0.0 to 1.0
+  #define STEER_COEFFICIENT   0.0  // higher value == stronger. if you do not want any steering, set it to 0.0; 0.0 to 1.0
 #endif
 #ifndef INVERT_R_DIRECTION
   #define INVERT_R_DIRECTION  1
